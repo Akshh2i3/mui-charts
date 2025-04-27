@@ -1,4 +1,4 @@
-import { Grid, Container } from '@mui/material';
+import { Grid, Container, Divider } from '@mui/material';
 import ConversionChart from './charts/ConversionChart';
 import StageWiseDistribution from './charts/StageWiseDistribution';
 import RegionSalesMap from './charts/RegionSalesMap';
@@ -12,18 +12,23 @@ const Dashboard = () => {
         <Grid item xs={12} md={6}>
           <ConversionChart />
         </Grid>
+        <Divider />
         <Grid item xs={12} md={6}>
           <StageWiseDistribution />
         </Grid>
+        <Divider />
         <Grid item xs={12}>
           <RegionSalesMap />
         </Grid>
+        <Divider />
         <Grid item xs={12}>
           <LoanTypeDistribution />
         </Grid>
+        <Divider />
         <Grid item xs={12}>
           <LoanTrends />
         </Grid>
+        <Divider />
       </Grid>
     </Container>
   );

@@ -12,7 +12,6 @@ const StageWiseDistribution = () => {
         series={[{ dataKey: 'value', color: '#3f51b5' }]}
         width={500}
         height={300}
-        layout="horizontal"
       />
     </Box>
   );
