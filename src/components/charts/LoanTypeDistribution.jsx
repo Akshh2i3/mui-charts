@@ -12,14 +12,6 @@ const LoanTypeDistribution = () => {
   return (
     <Box sx={{ p: 2, bgcolor: 'white', borderRadius: 2 }}>
       <Typography variant="h6">Across Loan Types</Typography>
-      <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
-        <Typography variant="subtitle1">
-          {loanTypesData.totalLoans} LOANS
-        </Typography>
-        <Typography variant="subtitle1">
-          ${loanTypesData.totalAmount}M LOAN AMT.
-        </Typography>
-      </Box>
       <BarChart
         dataset={chartData}
         xAxis={[{ scaleType: 'band', dataKey: 'type' }]}

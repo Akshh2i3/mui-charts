@@ -23,11 +23,11 @@ const ConversionChart = () => {
           width={300}
           height={200}
         />
-        <Box>
+        {/* <Box>
           <Typography variant="h4">{conversionData.conversionRate}%</Typography>
           <Typography color="success.main">+ {conversionData.monthlyGrowth}%</Typography>
           <Typography variant="body2">This Month</Typography>
-        </Box>
+        </Box> */}
       </Box>
     </Box>
   );
