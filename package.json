@@ -10,16 +10,18 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@emotion/react": "^11.10.4",
-    "@emotion/styled": "^11.10.4",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
     "@mui/icons-material": "^5.14.9",
     "@mui/material": "^5.14.10",
     "@mui/styles": "^5.14.10",
+    "@mui/system": "^7.0.2",
     "@mui/x-charts": "^8.0.0-beta.3",
     "d3": "^7.9.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-google-charts": "^5.2.1",
+    "recharts": "^2.15.3",
     "topojson-client": "^3.1.0"
   },
   "devDependencies": {

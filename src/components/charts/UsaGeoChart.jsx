@@ -4,7 +4,7 @@ import React from "react";
 import { usMapData } from "../../data/mockData";
 import Chart from "react-google-charts";
 
-export default function UsaGeoChartOne() {
+export default function UsaGeoChart() {
   return (
     <Box sx={{ p: 2, bgcolor: 'white', borderRadius: 2 }}>
       <Typography variant="h6">React-Google-Charts</Typography>

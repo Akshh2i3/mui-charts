@@ -4,8 +4,8 @@ import StageWiseDistribution from './charts/StageWiseDistribution';
 import RegionSalesMap from './charts/RegionSalesMap';
 import LoanTypeDistribution from './charts/LoanTypeDistribution';
 import LoanTrends from './charts/LoanTrends';
-import UsaGeoChartTwo from './charts/UsaGeoChartTwo';
-import UsaGeoChartOne from './charts/UsaGeoChartOne';
+import UsaGeoChart from './charts/UsaGeoChart';
+import SalesFunnel from './charts/SalesFunnel';
 
 const Dashboard = () => {
   return (
@@ -32,11 +32,11 @@ const Dashboard = () => {
         </Grid>
         <Divider />
         <Grid item xs={12}>
-          <UsaGeoChartOne/>
+          <UsaGeoChart />
         </Grid>
         <Divider />
         <Grid item xs={12}>
-          {/* <UsaGeoChartTwo/> */}
+          <SalesFunnel />
         </Grid>
         <Divider />
       </Grid>
