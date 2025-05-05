@@ -2,7 +2,7 @@ import { PieChart } from '@mui/x-charts';
 import { Box, Typography } from '@mui/material';
 import { conversionData } from '../../data/mockData';
 
-const ConversionChart = () => {
+const PieChartComponent = () => {
   const data = [
     { id: 0, value: conversionData.funded, label: 'Funded', color: '#4CAF50' },
     { id: 1, value: conversionData.notFunded, label: 'Not Funded', color: '#2196F3' }
@@ -10,7 +10,7 @@ const ConversionChart = () => {
 
   return (
     <Box sx={{ p: 2, bgcolor: 'white', borderRadius: 2 }}>
-      <Typography variant="h6">Conversion %</Typography>
+      <Typography variant="h6">MUI X-charts</Typography>
       <Box sx={{ display: 'flex', alignItems: 'center' }}>
         <PieChart
           series={[
@@ -20,8 +20,8 @@ const ConversionChart = () => {
               faded: { innerRadius: 30, additionalRadius: -30 }
             }
           ]}
-          width={300}
-          height={200}
+          width={500}
+          height={300}
         />
         {/* <Box>
           <Typography variant="h4">{conversionData.conversionRate}%</Typography>
@@ -33,4 +33,4 @@ const ConversionChart = () => {
   );
 };
 
-export default ConversionChart;
+export default PieChartComponent;

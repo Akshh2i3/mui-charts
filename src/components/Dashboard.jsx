@@ -1,42 +1,37 @@
 import { Grid, Container, Divider } from '@mui/material';
-import ConversionChart from './charts/ConversionChart';
-import StageWiseDistribution from './charts/StageWiseDistribution';
-import RegionSalesMap from './charts/RegionSalesMap';
-import LoanTypeDistribution from './charts/LoanTypeDistribution';
-import LoanTrends from './charts/LoanTrends';
-import UsaGeoChart from './charts/UsaGeoChart';
-import SalesFunnel from './charts/SalesFunnel';
+import PieChartComponent from './charts/PieChartComponent';
+import HorizontalBarChart from './charts/HorizontalBarChart';
+import MultiBarChart from './charts/MultiBarChart';
+import LineChartComponent from './charts/LineChartComponent';
+import UsGeoChart from './charts/USGeoChart';
+import FunnelChartComponent from './charts/FunnelChartComponent';
 
 const Dashboard = () => {
   return (
     <Container maxWidth="xl" sx={{ mt: 4, mb: 4 }}>
       <Grid spacing={3}>
         <Grid item xs={12} >
-          <ConversionChart />
+          <PieChartComponent />
         </Grid>
         <Divider />
         <Grid item xs={12}>
-          <StageWiseDistribution />
-        </Grid>
-        {/* <Divider />
-        <Grid item xs={12}>
-          <RegionSalesMap />
-        </Grid> */}
-        <Divider />
-        <Grid item xs={12}>
-          <LoanTypeDistribution />
+          <HorizontalBarChart />
         </Grid>
         <Divider />
         <Grid item xs={12}>
-          <LoanTrends />
+          <MultiBarChart />
         </Grid>
         <Divider />
         <Grid item xs={12}>
-          <UsaGeoChart />
+          <LineChartComponent />
         </Grid>
         <Divider />
         <Grid item xs={12}>
-          <SalesFunnel />
+          <UsGeoChart />
+        </Grid>
+        <Divider />
+        <Grid item xs={12}>
+          <FunnelChartComponent />
         </Grid>
         <Divider />
       </Grid>

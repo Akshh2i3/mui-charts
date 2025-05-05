@@ -4,7 +4,7 @@ import React from "react";
 import { usMapData } from "../../data/mockData";
 import Chart from "react-google-charts";
 
-export default function UsaGeoChart() {
+export default function USGeoChart() {
   return (
     <Box sx={{ p: 2, bgcolor: 'white', borderRadius: 2 }}>
       <Typography variant="h6">React-Google-Charts</Typography>
@@ -26,7 +26,7 @@ export default function UsaGeoChart() {
           width="100%"
           height="500px"
           data={usMapData}
-
+          
           options={{
             region: "US",
             resolution: "provinces",

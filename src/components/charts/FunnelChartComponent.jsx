@@ -2,7 +2,7 @@ import { useState } from "react";
 import { FunnelChart, Funnel, LabelList, Cell } from "recharts";
 import { Box, Typography, Button, Stack } from "@mui/material";
 
-export default function FixedShapeFunnelChart() {
+export default function FunnelChartComponent() {
     const [data, setData] = useState([
         { name: "Front end", value: 120, fill: "#E8EAF6" },
         { name: "Underwriting", value: 100, fill: "#C5CAE9" },
@@ -40,9 +40,7 @@ export default function FixedShapeFunnelChart() {
 
     return (
         <Box sx={{ width: '100%', p: 2 }}>
-            <Typography variant="h6" sx={{ mb: 3 }}>
-                Stage Wise Loan Distribution
-            </Typography>
+            <Typography variant="h6" sx={{ mb: 3 }}>Recharts</Typography>
             
             <Stack direction="row" spacing={2} sx={{ justifyContent: 'center', mb: 4 }}>
                 <Button
@@ -107,50 +105,3 @@ export default function FixedShapeFunnelChart() {
         </Box>
     );
 }
-
-
-
-// import { Box, Typography } from '@mui/material';
-// import { FunnelChart, Funnel, LabelList, Tooltip } from 'recharts';
-
-// export default function SalesFunnel() {
-//   const data = [
-//     { name: 'Front end', value: 140, fill: '#E8EAF6' },
-//     { name: 'Underwriting', value: 125, fill: '#C5CAE9' },
-//     { name: 'Credit Review', value: 125, fill: '#9FA8DA' },
-//     { name: 'Processing', value: 120, fill: '#7986CB' },
-//     { name: 'Closing', value: 120, fill: '#5C6BC0' },
-//     { name: 'Funded', value: 120, fill: '#3F51B5' }
-//   ];
-
-//   return (
-//     <Box sx={{ p: 2, bgcolor: 'white', borderRadius: 2 }}>
-//       <Typography variant="h6">Stage Wise Loan Distribution</Typography>
-//       <Box sx={{ display: 'flex', alignItems: 'center', mt: 2, ml: 2 }}>
-//         <FunnelChart width={700} height={300}>
-//           <Tooltip />
-//           <Funnel
-//             dataKey="value"
-//             data={data}
-//             isAnimationActive
-//             orientation="horizontal"
-//           >
-//             <LabelList 
-//               position="left" 
-//               fill="#000" 
-//               stroke="none" 
-//               dataKey="name"
-//               offset={20}
-//             />
-//             <LabelList 
-//               position="center" 
-//               fill="#000" 
-//               stroke="none" 
-//               dataKey="value"
-//             />
-//           </Funnel>
-//         </FunnelChart>
-//       </Box>
-//     </Box>
-//   );
-// }

@@ -8,11 +8,11 @@ export const conversionData = {
 
 export const stageWiseData = [
   { stage: 'Front end', value: 140 },
-  { stage: 'Underwriting', value: 125 },
-  { stage: 'Credit Review', value: 125 },
-  { stage: 'Processing', value: 120 },
-  { stage: 'Closing', value: 120 },
-  { stage: 'Funded', value: 120 }
+  { stage: 'Underwriting', value: 120 },
+  { stage: 'Credit Review', value: 100 },
+  { stage: 'Processing', value: 80 },
+  { stage: 'Closing', value: 60 },
+  { stage: 'Funded', value: 40 }
 ];
 
 export const regionSalesData = {
